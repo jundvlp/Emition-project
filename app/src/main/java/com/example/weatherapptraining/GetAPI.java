@@ -5,9 +5,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import org.json.JSONObject;
 import android.content.Context;
-import android.util.Log;
 
-public class RemoteFetch {
+
+public class GetAPI {
     private static final String OPEN_WEATHER_MAP_API =
             "http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric";
 
