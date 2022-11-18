@@ -24,11 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view1"
@@ -146,6 +145,15 @@
         app:layout_constraintLeft_toLeftOf="@id/view3"
         app:layout_constraintRight_toRightOf="@id/view3"/>
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        app:layout_constraintLeft_toLeftOf="@id/view1"
+        app:layout_constraintRight_toRightOf="@id/view1"
+        android:visibility="invisible"
+        android:onClick="button1"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
