@@ -154,6 +154,24 @@
         android:visibility="invisible"
         android:onClick="button1"
         tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_height="117dp"
+        android:layout_width="117dp"
+        android:id="@+id/button2"
+        app:layout_constraintLeft_toLeftOf="@id/view2"
+        app:layout_constraintRight_toRightOf="@id/view2"
+        android:visibility="invisible"
+        android:onClick="button2"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_height="117dp"
+        android:layout_width="117dp"
+        android:id="@+id/button3"
+        app:layout_constraintLeft_toLeftOf="@id/view3"
+        app:layout_constraintRight_toRightOf="@id/view3"
+        android:visibility="invisible"
+        android:onClick="button3"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

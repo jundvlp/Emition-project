@@ -21,5 +21,14 @@ public class MainActivity extends AppCompatActivity {
     public void button1(View view) {
         System.out.print("clickonbutton1");
         setContentView(R.layout.activity_main2);
+
+    }
+    public void button2(View view) {
+        System.out.print("clickonbutton2");
+        setContentView(R.layout.activity_main2);
+    }
+    public void button3(View view) {
+        System.out.print("clickonbutton3");
+        setContentView(R.layout.activity_main2);
     }
 }
