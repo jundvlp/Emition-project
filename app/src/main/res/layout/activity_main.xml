@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,10 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <View
         android:id="@+id/view1"
@@ -47,15 +49,16 @@
         app:layout_constraintLeft_toLeftOf="@id/view1"
         android:src="@drawable/cloud"
         />
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Kiev"
-        android:text="Kiev"
+        android:id="@+id/etCity"
+        android:hint="Enter City Name"
+        android:textSize="10dp"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/cloud1"
-        app:layout_constraintLeft_toLeftOf="@id/view1"
-        app:layout_constraintRight_toRightOf="@id/view1"/>
+        app:layout_constraintLeft_toLeftOf="@id/cloud1"
+        app:layout_constraintRight_toRightOf="@id/cloud1"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -146,32 +149,53 @@
         app:layout_constraintRight_toRightOf="@id/view3"/>
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="117dp"
-        android:layout_height="117dp"
+        android:id="@+id/butt1"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
         app:layout_constraintLeft_toLeftOf="@id/view1"
         app:layout_constraintRight_toRightOf="@id/view1"
-        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/etCity"
+        app:layout_constraintTop_toTopOf="@id/view1"
         android:onClick="button1"
-        tools:ignore="MissingConstraints" />
+        android:background="?android:selectableItemBackground"
+        android:enabled="false"
+        />
     <Button
-        android:layout_height="117dp"
-        android:layout_width="117dp"
-        android:id="@+id/button2"
+        android:layout_height="115dp"
+        android:layout_width="115dp"
+        android:id="@+id/butt2"
         app:layout_constraintLeft_toLeftOf="@id/view2"
         app:layout_constraintRight_toRightOf="@id/view2"
-        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@id/view2"
+        android:background="?android:selectableItemBackground"
+        android:enabled="false"
         android:onClick="button2"
-        tools:ignore="MissingConstraints" />
+         />
     <Button
-        android:layout_height="117dp"
-        android:layout_width="117dp"
-        android:id="@+id/button3"
-        app:layout_constraintLeft_toLeftOf="@id/view3"
-        app:layout_constraintRight_toRightOf="@id/view3"
-        android:visibility="invisible"
+        android:layout_height="115dp"
+        android:layout_width="115dp"
+        android:id="@+id/butt3"
         android:onClick="button3"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintLeft_toLeftOf="@id/view3"
+        app:layout_constraintBottom_toBottomOf="@id/view3"
+        app:layout_constraintTop_toTopOf="@id/view3"
+        app:layout_constraintRight_toRightOf="@id/view3"
+        android:background="?android:selectableItemBackground"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"/>
+    </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
