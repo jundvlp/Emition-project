@@ -2,7 +2,6 @@ package com.example.weatherapptraining;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DownloadManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,8 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.city_layout);
         etCity = findViewById(R.id.etCity);
-        btn1 = findViewById(R.id.butt1);
+        btn1 = findViewById(R.id.btnGet);
         tvResult = findViewById(R.id.tvResult);
 
         etCity.addTextChangedListener(new TextWatcher() {
@@ -68,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void button1(View view) {
-        System.out.print("clickonbutton1");
-        setContentView(R.layout.activity_main2);
         String tempUrl = "";
         String city = etCity.getText().toString().trim();
         if (city.equals("")) {
@@ -127,16 +122,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void button2(View view) {
         System.out.print("clickonbutton2");
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.detailed_forecast_layout);
     }
 
     public void button3(View view) {
         System.out.print("clickonbutton3");
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.detailed_forecast_layout);
     }
 
     public void btnback(View view) {
         System.out.print("clickonbtnback");
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.city_layout);
     }
 }

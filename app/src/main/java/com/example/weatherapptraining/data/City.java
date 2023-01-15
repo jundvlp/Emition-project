@@ -1,7 +1,7 @@
 package com.example.weatherapptraining.data;
 
 public class City {
-    String name;
+   public String name;
     int maxTemperature;
     int minTemperature;
     // weather identifier - cloudy, sunny, ect
