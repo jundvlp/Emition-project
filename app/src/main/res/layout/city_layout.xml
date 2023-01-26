@@ -31,14 +31,10 @@ tools:context=".MainActivity">
             android:textColor="@android:color/white"
             android:background="#0070C7"
             android:backgroundTint="@null" />
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvResult"/>
-        </ScrollView>
     </LinearLayout>
 
 
