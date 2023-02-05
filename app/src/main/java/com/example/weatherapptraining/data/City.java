@@ -10,10 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.weatherapptraining.R;
 
 public class City extends AppCompatActivity {
-   public String name;
-   public EditText etCity;
-   public Button btnGet;
-   public TextView tvResult;
+    public String name;
+   private EditText etCity;
+   private Button btnGet;
+   private TextView tvResult;
     int maxTemperature;
     int minTemperature;
     // weather identifier - cloudy, sunny, ect
@@ -31,10 +31,6 @@ public class City extends AppCompatActivity {
             public void onClick(View view) {
                 String name = etCity.getText().toString();
                 tvResult.setText(name);
-            }
-            public void btnGet(View view) {
-                System.out.print("clickonbutton2");
-                setContentView(R.layout.detailed_forecast_layout);
             }
         });
     }
