@@ -1,5 +1,6 @@
 package com.example.weatherapptraining.service;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class NetworkGateway   extends AppCompatActivity {
     private  final String url = "http://api.openweathermap.org/data/2.5/weather";
     private  final String appid = "&APPID=77d67887fba87dec09dfddb0d4601e4c";
     DecimalFormat df = new DecimalFormat("#.##");
+
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
