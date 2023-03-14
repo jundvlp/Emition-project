@@ -82,7 +82,7 @@ protected void onCreate(Bundle savedInstanceState) {
        if (location != null){cityName = getCityName(location.getLongitude(),location.getLatitude());
            getWeatherInfo(cityName);
        } else {
-           cityName = "Kyiv";
+           cityName = "London";
            getWeatherInfo(cityName);
        }
 
